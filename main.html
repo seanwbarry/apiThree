@@ -9,6 +9,35 @@
     <script src="js/app.js"></script>
 </head>
 <body>
-
+    <h1>Etsy API stuff</h1>
+    <form id='searchTerm'>
+        <div style="text-align:left; padding-left:10%; line-height:1.5em;">Max Price</div>
+        <input type='text' name='maxPrice' id='query' placeholder='enter max price'/>
+        <div style="text-align:left; padding-left:10%; line-height:1.5em;">Tags</div>
+        <input type='text' name='tags' id='query' placeholder='enter tags'/>
+        <div>
+            <input type='submit'  name='submit' value='submit'/>
+        </div>
+    </form> 
+    <div id="searchResults">
+        
+    </div>
+    <div class="templates hidden">
+        <dl class="listing">
+            <dt class="listing_id">id</dt>
+            <dd class="listing_id" id="listing_id"></dd>
+            <dt class="price">price</dt>
+            <dd class="price" id="price"></dd>
+            <dt class="views">views</dt>
+            <dd class="views" id="views"></dd>
+            <div>
+                <dt class="tags">tags</dt>
+                <dd class="tags" id="tags"></dd>
+            </div>
+            <div>
+                <dd class="picture" id="picture"></dd>
+            </div>
+        </dl>
+    </div>
 </body>
 </html>
